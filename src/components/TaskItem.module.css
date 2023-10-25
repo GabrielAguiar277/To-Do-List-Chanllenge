@@ -1,0 +1,42 @@
+.taskItem {
+    padding: 1rem;
+    background-color: var(--gray-500);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    border: 1px solid var(--gray-400);
+
+    display: flex;
+    gap: 0.75rem;
+
+    color: var(--gray-100);
+}
+
+.taskItem:not(:last-child) {
+    margin-bottom: .75rem;
+}
+
+.taskItem.hasCompleted {
+    color: var(--gray-300);
+    text-decoration: line-through;
+}
+
+.text {
+    width: 100%;
+}
+
+.delete {
+    color: var(--gray-100);
+    cursor: pointer;
+
+    line-height: 0;
+    
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    line-height: 0;
+    border-radius: 2px;
+}
+
+.delete:hover {
+    color: var(--danger);
+}

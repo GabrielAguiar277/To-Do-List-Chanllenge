@@ -1,0 +1,19 @@
+.noTask{
+    padding: 4rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border-radius: 8px;
+    border-top: 1px solid var(--gray-400);
+}
+
+.noTask div {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.noTask div p:first-child {
+    font-weight: 700;    
+}

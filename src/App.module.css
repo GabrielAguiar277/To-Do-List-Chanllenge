@@ -1,0 +1,77 @@
+.header {
+  height: 12.5rem;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--gray-700);
+}
+
+.main {
+  width: 100vw;
+  height: calc(100vh - 12.5rem);
+
+  display: flex;
+  justify-content: center;
+}
+
+.mainContent {
+  width: 46rem;
+}
+
+.mainBody {
+  margin-top: 4rem;
+}
+
+.taskCounter {
+  display: flex;
+  justify-content: space-between;
+  font-size: .875rem;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--white);
+
+  margin-bottom: 1.5rem;
+}
+
+.countTask {
+  color: var(--blue);
+}
+
+.completedTask {
+  color: var(--purple);
+}
+
+.countTask, .completedTask {
+  display: flex;
+  gap: .5rem;
+}
+
+.countTask span, .completedTask span {
+  color: var(--gray-200);
+  padding: .125rem .5rem;
+  background-color: var(--gray-400);
+  border-radius: 999px;
+  font-size: .75rem;
+}
+
+@media (max-width: 768px) {
+
+  html {
+      font-size: 87.5%;
+  }
+
+  .main {
+    padding: 0 .75rem;
+  }
+}
+
+@media (max-width: 487px) {
+
+  html {
+    font-size: 80%;
+  }
+
+}
